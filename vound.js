@@ -47,6 +47,7 @@
 		{
 			"ate": "ate",
 			"protype": "protype",
+			"truly": "truly",
 			"zelf": "zelf"
 		}
 	@end-include
@@ -54,14 +55,16 @@
 
 const ate = require( "ate" );
 const protype = require( "protype" );
+const truly = require( "truly" );
 const zelf = require( "zelf" );
 
-const vound = function vound( method, context ){
+const vound = function vound( method, context, name ){
 	/*;
 		@meta-configuration:
 			{
 				"method:required": "function",
-				"context:required": "*"
+				"context:required": "*",
+				"name": "string"
 			}
 		@end-meta-configuration
 	*/
@@ -70,9 +73,13 @@ const vound = function vound( method, context ){
 		throw new Error( "invalid method" );
 	}
 
+	if( truly( name ) && !protype( name, STRING ) ){
+		throw new Error( "invalid name" );
+	}
+
 	context = context || zelf( this );
 
-	let name = method.name;
+	name = name || method.name;
 
 	method = method.bind( context );
 

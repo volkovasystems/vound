@@ -1,6 +1,6 @@
 {
   "name": "vound",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Bound context to function with proper name.",
   "main": "vound.js",
   "authors": [
@@ -26,6 +26,7 @@
   "dependencies": {
     "ate": "^0.3.0",
     "protype": "^0.4.0",
+    "truly": "^0.3.0",
     "zelf": "^0.3.0"
   }
 }
