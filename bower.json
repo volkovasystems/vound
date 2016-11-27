@@ -1,0 +1,31 @@
+{
+  "name": "vound",
+  "version": "0.0.0",
+  "description": "Bound context to function with proper name.",
+  "main": "vound.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "bind",
+    "method",
+    "bound",
+    "context",
+    "function",
+    "vound"
+  ],
+  "homepage": "https://github.com/volkovasystems/vound",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ate": "^0.3.0",
+    "protype": "^0.4.0",
+    "zelf": "^0.3.0"
+  }
+}

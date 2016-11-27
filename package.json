@@ -1,0 +1,32 @@
+{
+  "name": "vound",
+  "version": "0.0.0",
+  "description": "Bound context to function with proper name.",
+  "main": "vound.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/vound.git"
+  },
+  "keywords": [
+    "bind",
+    "method",
+    "bound",
+    "context",
+    "function",
+    "vound"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/vound/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/vound#readme",
+  "dependencies": {
+    "ate": "^0.3.0",
+    "protype": "^0.4.0",
+    "zelf": "^0.3.0"
+  }
+}
