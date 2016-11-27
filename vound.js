@@ -79,11 +79,11 @@ const vound = function vound( method, context, name ){
 
 	context = context || zelf( this );
 
-	name = name || method.name;
+	name = name || method.name || "function";
 
 	method = method.bind( context );
 
-	ate( "name", name || "function", method );
+	ate( "name", name, method );
 
 	return method;
 };
