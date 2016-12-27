@@ -93,9 +93,9 @@ const vound = function vound( method, context, name ){
 
 	ate( "name", name, procedure );
 
-	harden( "BOUND", BOUND, procedure );
+	ate( "method", method, procedure );
 
-	harden( "method", method, procedure );
+	harden( "BOUND", BOUND, procedure );
 
 	return procedure;
 };

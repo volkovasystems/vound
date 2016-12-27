@@ -1,6 +1,6 @@
 {
   "name": "vound",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Bound context to function with proper name.",
   "main": "vound.js",
   "support": "vound.support.js",
