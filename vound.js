@@ -46,6 +46,7 @@
 	@include:
 		{
 			"ate": "ate",
+			"harden": "harden",
 			"protype": "protype",
 			"truly": "truly",
 			"zelf": "zelf"
@@ -54,9 +55,12 @@
 */
 
 const ate = require( "ate" );
+const harden = require( "harden" );
 const protype = require( "protype" );
 const truly = require( "truly" );
 const zelf = require( "zelf" );
+
+harden( "BOUND", "bound" );
 
 const vound = function vound( method, context, name ){
 	/*;
@@ -77,15 +81,23 @@ const vound = function vound( method, context, name ){
 		throw new Error( "invalid name" );
 	}
 
+	if( method.BOUND === BOUND ){
+		return method;
+	}
+
 	context = context || zelf( this );
 
-	name = name || method.name || "function";
+	name = name || method.name || "procedure";
 
-	method = method.bind( context );
+	let procedure = method.bind( context );
 
-	ate( "name", name, method );
+	ate( "name", name, procedure );
 
-	return method;
+	harden( "BOUND", BOUND, procedure );
+
+	harden( "method", method, procedure );
+
+	return procedure;
 };
 
 module.exports = vound;

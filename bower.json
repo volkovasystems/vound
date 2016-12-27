@@ -1,8 +1,10 @@
 {
   "name": "vound",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Bound context to function with proper name.",
   "main": "vound.js",
+  "support": "vound.support.js",
+  "deploy": "vound.deploy.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
   ],
@@ -24,9 +26,10 @@
     "tests"
   ],
   "dependencies": {
-    "ate": "^0.3.0",
-    "protype": "^0.4.0",
-    "truly": "^0.3.0",
-    "zelf": "^0.3.0"
+    "ate": "^0.4.0",
+    "protype": "^0.7.0",
+    "truly": "^0.5.0",
+    "zelf": "^0.4.0",
+    "harden": "^0.12.0"
   }
 }

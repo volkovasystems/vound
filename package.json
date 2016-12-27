@@ -1,10 +1,13 @@
 {
   "name": "vound",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Bound context to function with proper name.",
   "main": "vound.js",
+  "support": "vound.support.js",
+  "deploy": "vound.deploy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel vound.js -o vound.support.js && webpack",
+    "test": "mocha vound-test.js"
   },
   "repository": {
     "type": "git",
@@ -25,9 +28,19 @@
   },
   "homepage": "https://github.com/volkovasystems/vound#readme",
   "dependencies": {
-    "ate": "^0.3.0",
-    "protype": "^0.4.0",
-    "truly": "^0.3.0",
-    "zelf": "^0.3.0"
+    "ate": "^0.4.0",
+    "babel-runtime": "^6.20.0",
+    "harden": "^0.12.0",
+    "protype": "^0.7.0",
+    "truly": "^0.5.0",
+    "zelf": "^0.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "source-map-loader": "^0.1.5",
+    "webpack": "^1.14.0"
   }
 }
