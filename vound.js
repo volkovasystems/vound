@@ -48,6 +48,8 @@
 			"ate": "ate",
 			"harden": "harden",
 			"protype": "protype",
+			"raze": "raze",
+			"transpher": "transpher",
 			"truly": "truly",
 			"zelf": "zelf"
 		}
@@ -57,6 +59,8 @@
 const ate = require( "ate" );
 const harden = require( "harden" );
 const protype = require( "protype" );
+const raze = require( "raze" );
+const transpher = require( "transpher" );
 const truly = require( "truly" );
 const zelf = require( "zelf" );
 
@@ -89,7 +93,11 @@ const vound = function vound( method, context, name ){
 
 	name = name || method.name || "procedure";
 
-	let procedure = method.bind( context );
+	let procedure = function procedure( ){
+		return method.apply( context, raze( arguments ) );
+	};
+
+	transpher( method, procedure );
 
 	ate( "name", name, procedure );
 
