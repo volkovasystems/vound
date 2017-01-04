@@ -1,10 +1,10 @@
 {
   "name": "vound",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "dependencies": {
     "ate": {
       "version": "0.4.0",
-      "from": "ate@latest",
+      "from": "ate@>=0.4.0 <0.5.0",
       "resolved": "https://registry.npmjs.org/ate/-/ate-0.4.0.tgz",
       "dependencies": {
         "babel-runtime": {
@@ -290,7 +290,7 @@
     },
     "babel-runtime": {
       "version": "6.20.0",
-      "from": "babel-runtime@latest",
+      "from": "babel-runtime@>=6.20.0 <7.0.0",
       "resolved": "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.20.0.tgz"
     },
     "core-js": {
@@ -300,7 +300,7 @@
     },
     "harden": {
       "version": "0.12.0",
-      "from": "harden@latest",
+      "from": "harden@>=0.12.0 <0.13.0",
       "resolved": "https://registry.npmjs.org/harden/-/harden-0.12.0.tgz",
       "dependencies": {
         "babel-runtime": {
@@ -322,7 +322,7 @@
     },
     "protype": {
       "version": "0.7.0",
-      "from": "protype@latest",
+      "from": "protype@>=0.7.0 <0.8.0",
       "resolved": "https://registry.npmjs.org/protype/-/protype-0.7.0.tgz",
       "dependencies": {
         "babel-runtime": {
@@ -410,7 +410,7 @@
     },
     "raze": {
       "version": "0.6.0",
-      "from": "raze@latest",
+      "from": "raze@>=0.6.0 <0.7.0",
       "resolved": "https://registry.npmjs.org/raze/-/raze-0.6.0.tgz",
       "dependencies": {
         "babel-runtime": {
@@ -635,7 +635,7 @@
     },
     "transpher": {
       "version": "0.0.0",
-      "from": "transpher@latest",
+      "from": "transpher@0.0.0",
       "resolved": "https://registry.npmjs.org/transpher/-/transpher-0.0.0.tgz",
       "dependencies": {
         "ate": {
@@ -1053,7 +1053,7 @@
     },
     "truly": {
       "version": "0.5.0",
-      "from": "truly@latest",
+      "from": "truly@>=0.5.0 <0.6.0",
       "resolved": "https://registry.npmjs.org/truly/-/truly-0.5.0.tgz",
       "dependencies": {
         "babel-runtime": {
@@ -1163,7 +1163,7 @@
     },
     "zelf": {
       "version": "0.4.0",
-      "from": "zelf@latest",
+      "from": "zelf@>=0.4.0 <0.5.0",
       "resolved": "https://registry.npmjs.org/zelf/-/zelf-0.4.0.tgz",
       "dependencies": {
         "asea": {
