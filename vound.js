@@ -45,22 +45,20 @@
 
 	@include:
 		{
-			"ate": "ate",
 			"harden": "harden",
+			"kloak": "kloak",
 			"protype": "protype",
 			"raze": "raze",
-			"transpher": "transpher",
 			"truly": "truly",
 			"zelf": "zelf"
 		}
 	@end-include
 */
 
-const ate = require( "ate" );
 const harden = require( "harden" );
+const kloak = require( "kloak" );
 const protype = require( "protype" );
 const raze = require( "raze" );
-const transpher = require( "transpher" );
 const truly = require( "truly" );
 const zelf = require( "zelf" );
 
@@ -97,13 +95,7 @@ const vound = function vound( method, context, name ){
 		return method.apply( context, raze( arguments ) );
 	};
 
-	transpher( method, procedure );
-
-	ate( "name", name, procedure );
-
-	harden( "method", method, procedure );
-
-	harden( "BOUND", BOUND, procedure );
+	kloak( method, procedure, BOUND, name );
 
 	return procedure;
 };
