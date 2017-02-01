@@ -138,9 +138,9 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-ate@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/ate/-/ate-0.7.0.tgz#4d2c9f46fa5bbd2f27cbb445b7330a6090903af6"
+ate@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/ate/-/ate-0.8.0.tgz#524adc4db07bf92db81ce3e7bacb8d4ed282b0d5"
   dependencies:
     babel-runtime "^6.22.0"
     falzy "^0.10.0"
@@ -1577,18 +1577,18 @@ kind-of@^3.0.2:
   dependencies:
     is-buffer "^1.0.2"
 
-kloak@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/kloak/-/kloak-0.3.0.tgz#b03d4a99282d0c24d252e3e3e83867bb64930bc4"
+kloak@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/kloak/-/kloak-0.4.0.tgz#244a7bbf603b8540eb0137558312221cf3bf8608"
   dependencies:
-    ate "^0.7.0"
+    ate "^0.8.0"
     babel-runtime "^6.22.0"
     cobralize "^0.6.0"
     falzy "^0.10.0"
     harden "^0.14.0"
     kein "^0.8.0"
     protype "^0.11.0"
-    transpher "^0.4.0"
+    transpher "^0.5.0"
     truly "^0.9.0"
 
 lazy-cache@^1.0.3:
@@ -2353,11 +2353,11 @@ tough-cookie@~2.3.0:
   dependencies:
     punycode "^1.4.1"
 
-transpher@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/transpher/-/transpher-0.4.0.tgz#72ce22087143734d9a41dd0ae66d5f9e8964056f"
+transpher@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/transpher/-/transpher-0.5.0.tgz#890ea517c0dbee92a0ef1496e3329036e4c09c8f"
   dependencies:
-    ate "^0.7.0"
+    ate "^0.8.0"
     babel-runtime "^6.22.0"
     falzy "^0.10.0"
 
