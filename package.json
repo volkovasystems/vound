@@ -1,10 +1,11 @@
 {
   "name": "vound",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Bound context to function with proper name.",
   "main": "vound.js",
   "support": "vound.support.js",
   "deploy": "vound.deploy.js",
+  "browser": "vound.deploy.js",
   "scripts": {
     "build": "babel vound.js -o vound.support.js && webpack",
     "test": "mocha vound-test.js"
@@ -22,26 +23,29 @@
     "vound"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/vound/issues"
   },
   "homepage": "https://github.com/volkovasystems/vound#readme",
   "dependencies": {
-    "babel-runtime": "^6.20.0",
-    "harden": "^0.12.0",
-    "kloak": "0.0.0",
-    "protype": "^0.8.0",
-    "raze": "^0.6.0",
-    "truly": "^0.5.0",
-    "zelf": "^0.4.0"
+    "babel-runtime": "^6.22.0",
+    "harden": "^0.14.0",
+    "kloak": "^0.3.0",
+    "protype": "^0.11.0",
+    "raze": "^0.12.0",
+    "truly": "^0.9.0",
+    "zelf": "^0.6.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-core": "^6.21.0",
-    "babel-plugin-transform-runtime": "^6.15.0",
-    "babel-preset-latest": "^6.16.0",
-    "source-map-loader": "^0.1.5",
-    "webpack": "^1.14.0"
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "source-map-loader": "^0.1.6",
+    "webpack": "^2.2.1"
   }
 }
