@@ -48,24 +48,24 @@
 
 	@include:
 		{
-			"harden": "harden",
 			"kloak": "kloak",
 			"protype": "protype",
 			"raze": "raze",
-			"truly": "truly",
+			"wichevr": "wichevr",
+			"wichis": "wichis",
 			"zelf": "zelf"
 		}
 	@end-include
 */
 
-const harden = require( "harden" );
 const kloak = require( "kloak" );
 const protype = require( "protype" );
 const raze = require( "raze" );
-const truly = require( "truly" );
+const wichevr = require( "wichevr" );
+const wichis = require( "wichis" );
 const zelf = require( "zelf" );
 
-harden( "BOUND", "bound" );
+const BOUND = "bound";
 
 const vound = function vound( method, context, name ){
 	/*;
@@ -78,21 +78,19 @@ const vound = function vound( method, context, name ){
 		@end-meta-configuration
 	*/
 
+	method = wichevr( method, function procedure( ){ return this; } );
+
 	if( !protype( method, FUNCTION ) ){
 		throw new Error( "invalid method" );
-	}
-
-	if( truly( name ) && !protype( name, STRING ) ){
-		throw new Error( "invalid name" );
 	}
 
 	if( method.BOUND === BOUND ){
 		return method;
 	}
 
-	context = context || zelf( this );
+	context = wichis( context, zelf( this ) );
 
-	name = name || method.name || "procedure";
+	name = wichevr( name, method.name, "procedure" );
 
 	let procedure = function procedure( ){
 		return method.apply( context, raze( arguments ) );

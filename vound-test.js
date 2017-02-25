@@ -2,4 +2,4 @@
 
 const vound = require( "./vound.js" );
 
-console.log( vound( ) );
+console.log( require( "util" ).inspect( vound( ), { "showHidden": true } ) );

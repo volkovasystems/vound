@@ -48,24 +48,24 @@
               
               	@include:
               		{
-              			"harden": "harden",
               			"kloak": "kloak",
               			"protype": "protype",
               			"raze": "raze",
-              			"truly": "truly",
+              			"wichevr": "wichevr",
+              			"wichis": "wichis",
               			"zelf": "zelf"
               		}
               	@end-include
               */
 
-var harden = require("harden");
 var kloak = require("kloak");
 var protype = require("protype");
 var raze = require("raze");
-var truly = require("truly");
+var wichevr = require("wichevr");
+var wichis = require("wichis");
 var zelf = require("zelf");
 
-harden("BOUND", "bound");
+var BOUND = "bound";
 
 var vound = function vound(method, context, name) {
 	/*;
@@ -78,21 +78,19 @@ var vound = function vound(method, context, name) {
                                                    	@end-meta-configuration
                                                    */
 
+	method = wichevr(method, function procedure() {return this;});
+
 	if (!protype(method, FUNCTION)) {
 		throw new Error("invalid method");
-	}
-
-	if (truly(name) && !protype(name, STRING)) {
-		throw new Error("invalid name");
 	}
 
 	if (method.BOUND === BOUND) {
 		return method;
 	}
 
-	context = context || zelf(this);
+	context = wichis(context, zelf(this));
 
-	name = name || method.name || "procedure";
+	name = wichevr(name, method.name, "procedure");
 
 	var procedure = function procedure() {
 		return method.apply(context, raze(arguments));
