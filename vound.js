@@ -65,7 +65,8 @@ const wichevr = require( "wichevr" );
 const wichis = require( "wichis" );
 const zelf = require( "zelf" );
 
-const BOUND = "bound";
+const BOUND = Symbol( "bound" );
+const DEFAULT_METHOD_NAME = "procedure";
 
 const vound = function vound( method, context, name ){
 	/*;
@@ -84,13 +85,13 @@ const vound = function vound( method, context, name ){
 		throw new Error( "invalid method" );
 	}
 
-	if( method.BOUND === BOUND ){
+	if( method[ BOUND ] === BOUND ){
 		return method;
 	}
 
 	context = wichis( context, zelf( this ) );
 
-	name = wichevr( name, method.name, "procedure" );
+	name = wichevr( name, method.name, DEFAULT_METHOD_NAME );
 
 	let procedure = function procedure( ){
 		return method.apply( context, raze( arguments ) );
