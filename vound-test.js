@@ -1,5 +1,3 @@
-"use strict";
-
 const vound = require( "./vound.js" );
 
 let test = vound( function hello( ){ return [ this, arguments ]; }, "yeah" );
