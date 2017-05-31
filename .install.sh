@@ -1,10 +1,10 @@
 yarn add \
 babel-runtime \
 kloak \
+mrkd \
 protype \
 raze \
 wichevr \
-wichis \
 zelf \
 --save && \
 yarn add \
@@ -17,10 +17,10 @@ webpack \
 --dev && \
 bower install \
 kloak \
+mrkd \
 protype \
 raze \
 wichevr \
-wichis \
 zelf \
 --save \
 --force-latest

@@ -49,6 +49,7 @@
                                                                                                                                                                                                                 	@include:
                                                                                                                                                                                                                 		{
                                                                                                                                                                                                                 			"kloak": "kloak",
+                                                                                                                                                                                                                			"mrkd": "mrkd",
                                                                                                                                                                                                                 			"protype": "protype",
                                                                                                                                                                                                                 			"raze": "raze",
                                                                                                                                                                                                                 			"wichevr": "wichevr",
@@ -59,10 +60,10 @@
                                                                                                                                                                                                                 */
 
 var kloak = require("kloak");
+var mrkd = require("mrkd");
 var protype = require("protype");
 var raze = require("raze");
 var wichevr = require("wichevr");
-var wichis = require("wichis");
 var zelf = require("zelf");
 
 var BOUND = (0, _symbol2.default)("bound");
@@ -85,11 +86,11 @@ var vound = function vound(method, context, name) {
 		throw new Error("invalid method");
 	}
 
-	if (method[BOUND] === BOUND) {
+	if (mrkd(BOUND, method, true)) {
 		return method;
 	}
 
-	context = wichis(context, zelf(this));
+	context = wichevr(context, zelf(this));
 
 	name = wichevr(name, method.name, DEFAULT_METHOD_NAME);
 

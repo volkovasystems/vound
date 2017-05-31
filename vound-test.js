@@ -1,6 +1,9 @@
+
+const assert = require( "assert" );
 const vound = require( "./vound.js" );
 
-let test = vound( function hello( ){ return [ this, arguments ]; }, "yeah" );
+let test = vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { "yeah": "hello" } );
 
-console.log( require( "util" ).inspect( test, { "showHidden": true } ) );
-console.log( test( 1, 2, 3 ) );
+assert.deepEqual( test( 1, 2, 3 ), [ { "yeah": "hello" }, [ 1, 2, 3 ] ], "should be deeply equal" );
+
+console.log( "ok" );

@@ -49,6 +49,7 @@
 	@include:
 		{
 			"kloak": "kloak",
+			"mrkd": "mrkd",
 			"protype": "protype",
 			"raze": "raze",
 			"wichevr": "wichevr",
@@ -59,10 +60,10 @@
 */
 
 const kloak = require( "kloak" );
+const mrkd = require( "mrkd" );
 const protype = require( "protype" );
 const raze = require( "raze" );
 const wichevr = require( "wichevr" );
-const wichis = require( "wichis" );
 const zelf = require( "zelf" );
 
 const BOUND = Symbol( "bound" );
@@ -85,11 +86,11 @@ const vound = function vound( method, context, name ){
 		throw new Error( "invalid method" );
 	}
 
-	if( method[ BOUND ] === BOUND ){
+	if( mrkd( BOUND, method, true ) ){
 		return method;
 	}
 
-	context = wichis( context, zelf( this ) );
+	context = wichevr( context, zelf( this ) );
 
 	name = wichevr( name, method.name, DEFAULT_METHOD_NAME );
 
