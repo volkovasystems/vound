@@ -1,13 +1,13 @@
 {
   "name": "vound",
-  "version": "0.27.0",
+  "version": "0.28.0",
   "description": "Bound context to function with proper name.",
   "main": "vound.deploy.js",
   "support": "vound.support.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon"
+    "Vinse Vinalon <vinsevinalon@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -27,8 +27,8 @@
     "tests"
   ],
   "dependencies": {
-    "kloak": "^0.26.0",
-    "mrkd": "^0.7.0",
+    "kloak": "^0.27.0",
+    "mrkd": "^0.8.0",
     "protype": "^0.22.0",
     "raze": "^0.30.0",
     "wichevr": "^0.10.0",
