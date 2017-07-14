@@ -51,7 +51,6 @@
                                                                                                                                                                                                                 		{
                                                                                                                                                                                                                 			"kloak": "kloak",
                                                                                                                                                                                                                 			"mrkd": "mrkd",
-                                                                                                                                                                                                                			"protype": "protype",
                                                                                                                                                                                                                 			"raze": "raze",
                                                                                                                                                                                                                 			"wichevr": "wichevr",
                                                                                                                                                                                                                 			"wichis": "wichis",
@@ -62,7 +61,6 @@
 
 var kloak = require("kloak");
 var mrkd = require("mrkd");
-var protype = require("protype");
 var raze = require("raze");
 var wichevr = require("wichevr");
 var zelf = require("zelf");
@@ -83,7 +81,7 @@ var vound = function vound(method, context, name) {
 
 	method = wichevr(method, function procedure() {return this;});
 
-	if (!protype(method, FUNCTION)) {
+	if (typeof method != "function") {
 		throw new Error("invalid method");
 	}
 

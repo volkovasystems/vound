@@ -2,7 +2,6 @@ yarn add \
 babel-runtime \
 kloak \
 mrkd \
-protype \
 raze \
 wichevr \
 zelf \
@@ -18,7 +17,6 @@ webpack \
 bower install \
 kloak \
 mrkd \
-protype \
 raze \
 wichevr \
 zelf \

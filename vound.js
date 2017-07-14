@@ -51,7 +51,6 @@
 		{
 			"kloak": "kloak",
 			"mrkd": "mrkd",
-			"protype": "protype",
 			"raze": "raze",
 			"wichevr": "wichevr",
 			"wichis": "wichis",
@@ -62,7 +61,6 @@
 
 const kloak = require( "kloak" );
 const mrkd = require( "mrkd" );
-const protype = require( "protype" );
 const raze = require( "raze" );
 const wichevr = require( "wichevr" );
 const zelf = require( "zelf" );
@@ -83,7 +81,7 @@ const vound = function vound( method, context, name ){
 
 	method = wichevr( method, function procedure( ){ return this; } );
 
-	if( !protype( method, FUNCTION ) ){
+	if( typeof method != "function" ){
 		throw new Error( "invalid method" );
 	}
 

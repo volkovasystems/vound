@@ -1,6 +1,6 @@
 {
   "name": "vound",
-  "version": "0.29.0",
+  "version": "0.30.0",
   "description": "Bound context to function with proper name.",
   "main": "vound.deploy.js",
   "support": "vound.support.js",
@@ -27,11 +27,10 @@
     "tests"
   ],
   "dependencies": {
-    "kloak": "^0.28.0",
-    "mrkd": "^0.8.0",
-    "protype": "^0.22.0",
-    "raze": "^0.30.0",
-    "wichevr": "^0.10.0",
+    "kloak": "^0.29.0",
+    "mrkd": "^0.9.0",
+    "raze": "^0.33.0",
+    "wichevr": "^0.13.0",
     "zelf": "^0.12.0"
   }
 }
