@@ -1,36 +1,29 @@
 {
-  "name": "vound",
-  "version": "0.31.0",
-  "description": "Bound context to function with proper name.",
-  "main": "vound.deploy.js",
-  "support": "vound.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "bind",
-    "method",
-    "bound",
-    "context",
-    "function",
-    "vound"
-  ],
-  "homepage": "https://github.com/volkovasystems/vound",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "kloak": "^0.30.0",
-    "mrkd": "^0.11.0",
-    "raze": "^0.34.0",
-    "wichevr": "^0.14.0",
-    "zelf": "^0.14.0"
-  }
+	"name": "vound",
+	"version": "0.31.0",
+	"description": "Bound context to function with proper name.",
+	"main": "vound.deploy.js",
+	"support": "vound.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"bind",
+		"method",
+		"bound",
+		"context",
+		"function",
+		"vound"
+	],
+	"homepage": "https://github.com/volkovasystems/vound",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }
