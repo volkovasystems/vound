@@ -66,6 +66,16 @@ const vound = require( "./vound.js" );
 
 describe( "vound", ( ) => {
 
+	describe( "`vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { 'yeah': 'hello' } )`", ( ) => {
+		it( "should return array containing { 'yeah': 'hello' } and given parameters values", ( ) => {
+
+			let test = vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { "yeah": "hello" } );
+
+			assert.deepEqual( test( 1, 2, 3 ), [ { "yeah": "hello" },[ 1, 2, 3 ] ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-server

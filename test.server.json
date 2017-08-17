@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-15T15:20:22.857Z",
-    "end": "2017-08-15T15:20:22.857Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-17T06:46:29.472Z",
+		"end": "2017-08-17T06:46:29.487Z",
+		"duration": 15
+	},
+	"tests": [
+		{
+			"title": "should return array containing { 'yeah': 'hello' } and given parameters values",
+			"fullTitle": "vound `vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { 'yeah': 'hello' } )` should return array containing { 'yeah': 'hello' } and given parameters values",
+			"duration": 11,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return array containing { 'yeah': 'hello' } and given parameters values",
+			"fullTitle": "vound `vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { 'yeah': 'hello' } )` should return array containing { 'yeah': 'hello' } and given parameters values",
+			"duration": 11,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

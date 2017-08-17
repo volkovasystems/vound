@@ -25,5 +25,12 @@
 		"bower_components",
 		"test",
 		"tests"
-	]
+	],
+	"dependencies": {
+		"kloak": "^0.30.0",
+		"mrkd": "^0.11.0",
+		"raze": "^0.34.0",
+		"wichevr": "^0.14.0",
+		"zelf": "^0.14.0"
+	}
 }
