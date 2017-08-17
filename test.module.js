@@ -70,6 +70,16 @@ const path = require( "path" );
 
 describe( "vound", ( ) => {
 
+	describe( "`vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { 'yeah': 'hello' } )`", ( ) => {
+		it( "should return array containing { 'yeah': 'hello' } and given parameters values", ( ) => {
+
+			let test = vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { "yeah": "hello" } );
+
+			assert.deepEqual( test( 1, 2, 3 ), [ { "yeah": "hello" },[ 1, 2, 3 ] ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -78,6 +88,17 @@ describe( "vound", ( ) => {
 //: @client:
 
 describe( "vound", ( ) => {
+
+	describe( "`vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { 'yeah': 'hello' } )`", ( ) => {
+		it( "should return array containing { 'yeah': 'hello' } and given parameters values", ( ) => {
+
+			let test = vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { "yeah": "hello" } );
+
+			assert.deepEqual( test( 1, 2, 3 ), [ { "yeah": "hello" },[ 1, 2, 3 ] ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -86,6 +107,29 @@ describe( "vound", ( ) => {
 //: @bridge:
 
 describe( "vound", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { 'yeah': 'hello' } )`", ( ) => {
+		it( "should return array containing { 'yeah': 'hello' } and given parameters values", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					let test = vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { "yeah": "hello" } );
+					return JSON.stringify( test( 1, 2, 3 ) );
+
+				}
+
+			).value;
+			//: @end-ignore
+
+			assert.deepEqual( JSON.parse( result ), [ { "yeah": "hello" },[ 1, 2, 3 ] ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-bridge
