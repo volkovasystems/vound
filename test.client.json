@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-17T06:46:30.747Z",
-	"end": "2017-08-17T06:47:04.983Z",
+	"start": "2017-08-29T04:30:21.083Z",
+	"end": "2017-08-29T04:31:15.591Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,36 +28,36 @@
 		{
 			"name": "vound",
 			"duration": 0,
-			"start": "2017-08-17T06:47:04.665Z",
+			"start": "2017-08-29T04:31:15.244Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "vound",
-			"duration": 138,
-			"start": "2017-08-17T06:47:04.666Z",
-			"end": "2017-08-17T06:47:04.804Z",
+			"duration": 165,
+			"start": "2017-08-29T04:31:15.245Z",
+			"end": "2017-08-29T04:31:15.410Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-17T06:47:04.668Z",
-					"end": "2017-08-17T06:47:04.669Z",
+					"start": "2017-08-29T04:31:15.246Z",
+					"end": "2017-08-29T04:31:15.247Z",
 					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "vound",
 					"associatedTest": "should return array containing { 'yeah': 'hello' } and given parameters values"
 				},
 				{
-					"start": "2017-08-17T06:47:04.803Z",
-					"end": "2017-08-17T06:47:04.803Z",
+					"start": "2017-08-29T04:31:15.409Z",
+					"end": "2017-08-29T04:31:15.409Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "vound",
 					"associatedTest": "should return array containing { 'yeah': 'hello' } and given parameters values"
 				},
 				{
-					"start": "2017-08-17T06:47:04.804Z",
-					"end": "2017-08-17T06:47:04.804Z",
+					"start": "2017-08-29T04:31:15.410Z",
+					"end": "2017-08-29T04:31:15.410Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "vound"
@@ -66,15 +66,15 @@
 		},
 		{
 			"name": "`vound( function hello( ){ return [ this, Array.from( arguments ) ]; }, { 'yeah': 'hello' } )`",
-			"duration": 137,
-			"start": "2017-08-17T06:47:04.667Z",
-			"end": "2017-08-17T06:47:04.804Z",
+			"duration": 165,
+			"start": "2017-08-29T04:31:15.245Z",
+			"end": "2017-08-29T04:31:15.410Z",
 			"tests": [
 				{
 					"name": "should return array containing { 'yeah': 'hello' } and given parameters values",
-					"start": "2017-08-17T06:47:04.668Z",
-					"end": "2017-08-17T06:47:04.803Z",
-					"duration": 135,
+					"start": "2017-08-29T04:31:15.246Z",
+					"end": "2017-08-29T04:31:15.409Z",
+					"duration": 163,
 					"state": "pass"
 				}
 			],
